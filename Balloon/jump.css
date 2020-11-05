@@ -1,0 +1,81 @@
+.canvas {
+  background-color: skyblue;
+  height: 90%;
+  width: 90%;
+  position: absolute;
+}
+.ground {
+  background-color: rgb(128, 52, 1);
+  height: 5%;
+  width: 90%;
+  position: absolute;
+  top: 90%;
+}
+.cloud {
+  background-color: white;
+  height: 50px;
+  width: 100px;
+  border-radius: 60px;
+  position: absolute;
+  /* box-shad ow: 10px 10px teal; */
+}
+.cloud:before,
+.cloud:after {
+  content: "";
+  position: relative;
+  display: inline-block;
+  background: inherit;
+  border-radius: 50px;
+  /* box-shadow: 10px 10px teal; */
+}
+.cloud::after {
+  width: 40px;
+  height: 40px;
+  top: -20px;
+  left: 5px;
+}
+.cloud::before {
+  width: 50px;
+  height: 50px;
+  top: -25px;
+  left: 10px;
+}
+.cloud:nth-child(2) {
+  transform: scale(0.5);
+}
+.cloud:nth-child(3) {
+  transform: scale(1.2);
+}
+.cloud:nth-child(5) {
+  transform: scale(1.5);
+}
+.balloon {
+  background-color: tomato;
+  position: relative;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  float: right;
+  margin-right: 20px;
+  border-radius: 50%;
+  transform: scale(0.8);
+}
+.balloon:after {
+  content: "";
+  background-color: rgb(245, 147, 130);
+  height: 50px;
+  width: 20px;
+  border-radius: 50%;
+  position: relative;
+  left: -5px;
+}
+.balloon:before {
+  content: "";
+  background-color: rgb(137, 22, 2);
+  height: 30px;
+  width: 20px;
+
+  position: relative;
+  left: 15px;
+  top: 50px;
+}
