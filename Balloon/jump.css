@@ -49,8 +49,29 @@
 .cloud:nth-child(5) {
   transform: scale(1.5);
 }
+.basket {
+  background-color: rgb(191, 41, 41);
+  height: 25px;
+  width: 20px;
+  display: flex;
+  position: absolute;
+  float: right;
+  left: 14px;
+  top: 55px;
+}
+.basket::after {
+  background-color: rgb(191, 41, 41);
+  height: 25px;
+  width: 5px;
+  display: flex;
+  position: relative;
+  float: right;
+  left: 14px;
+  top: 10px;
+}
+
 .balloon {
-  background-color: tomato;
+  background-color: rgb(191, 41, 41);
   position: relative;
   height: 50px;
   width: 50px;
@@ -62,20 +83,51 @@
 }
 .balloon:after {
   content: "";
-  background-color: rgb(245, 147, 130);
+  background-color: rgb(191, 41, 41);
   height: 50px;
-  width: 20px;
+  width: 10px;
   border-radius: 50%;
   position: relative;
-  left: -5px;
+  left: -10px;
 }
 .balloon:before {
   content: "";
-  background-color: rgb(137, 22, 2);
-  height: 30px;
+  background-color: rgb(245, 147, 130);
+  height: 50px;
+  width: 30px;
+  border-radius: 50%;
+  position: relative;
+  left: 10px;
+}
+
+.tree {
+  position: relative;
+  top: 84%;
+  left: 50%;
+  height: 40px;
   width: 20px;
+  background-color: darkgreen;
+  border-radius: 50%;
+}
+.tree:after {
+  content: "";
+  display: inline-block;
+  background-color: darkgreen;
+  height: 50px;
+  width: 40px;
+  border-radius: 50%;
+  position: absolute;
+  left: -10px;
+  top: 25px;
+}
+.tree:before {
+  content: "";
+  display: inline-block;
+  background-color: rgb(71, 40, 0);
+  height: 50px;
+  width: 5px;
 
   position: relative;
-  left: 15px;
+  left: 7px;
   top: 50px;
 }
